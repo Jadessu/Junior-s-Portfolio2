@@ -1,0 +1,661 @@
+:root{
+  --dark-blue: rgb(12, 24, 41);
+  --light: rgb(231, 228, 228)
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+  }
+  
+  @media screen and (max-width:400px) {
+    html {
+      font-size: 9.411764705882353px;
+    }
+  
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    background: var(--dark-blue);
+    font-family: "Lora", serif;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.882;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ------------------------------------------------------------------- 
+   * ## links
+   * ------------------------------------------------------------------- */
+  a {
+    color: #cf1767;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover,
+  a:focus,
+  a:active {
+    color: #000000;
+  }
+  
+  a:hover,
+  a:active {
+    outline: 0;
+  }
+  
+  
+  
+  /* ===================================================================
+   * # typography & general theme styles
+   * 
+   * ------------------------------------------------------------------- */
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-variant-ligatures: common-ligatures;
+    text-rendering: optimizeLegibility;
+  }
+  
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+    margin-top: 6rem;
+    margin-bottom: 1.6rem;
+  }
+  
+  @media screen and (max-width:600px) {
+    h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+      margin-top: 6rem;
+    }
+  }
+  
+  h5, .h5, h6, .h6 {
+    margin-top: 4.8rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  @media screen and (max-width:600px) {
+    h5, .h5, h6, .h6 {
+      margin-top: 4rem;
+      margin-bottom: 0.8rem;
+    }
+  
+  }
+  
+  h1, .h1 {
+    font-size: 3.6rem;
+    line-height: 1.222;
+    letter-spacing: -.1rem;
+  }
+  
+  @media screen and (max-width:600px) {
+    h1, .h1 {
+      font-size: 3.3rem;
+      letter-spacing: -.07rem;
+    }
+  
+  }
+  
+  h2, .h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+  
+  h3, .h3 {
+    font-size: 2.4rem;
+    line-height: 1.1667;
+  }
+  
+  h4, .h4 {
+    font-size: 2.1rem;
+    line-height: 1.286;
+  }
+  
+  h5, .h5 {
+    font-size: 1.8rem;
+    line-height: 1.333;
+  }
+  
+  h6, .h6 {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: .16rem;
+  }
+  
+  p img {
+    margin: 0;
+  }
+  
+  p.lead {
+    font-family: "Lora", serif;
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 1.833;
+    margin-bottom: 3.6rem;
+    color: #000000;
+  }
+  
+  @media screen and (max-width:1200px) {
+    p.lead {
+      font-size: 2.2rem;
+    }
+  
+  }
+  
+  em,
+  i,
+  strong,
+  b {
+    font-size: inherit;
+    line-height: inherit;
+  }
+  
+  em,
+  i {
+    font-family: "Lora", serif;
+    font-style: italic;
+  }
+  
+  strong,
+  b {
+    font-family: "Lora", serif;
+    font-weight: 700;
+  }
+  
+  small {
+    font-size: 1.2rem;
+    line-height: inherit;
+  }
+  
+  blockquote {
+    margin: 4rem 0;
+    padding-left: 4.8rem;
+    position: relative;
+  }
+  
+  blockquote:before {
+    content: "\201C";
+    font-size: 11.2rem;
+    line-height: 0px;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.2);
+    font-family: arial, sans-serif;
+    position: absolute;
+    top: 4.8rem;
+    left: 0;
+  }
+  
+  blockquote p {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 400;
+    padding: 0;
+    font-size: 2.1rem;
+    line-height: 1.905;
+    color: #000000;
+  }
+  
+  blockquote cite {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    line-height: 1.429;
+  }
+  
+  blockquote cite:before {
+    content: "\2014 \0020";
+  }
+  
+  blockquote cite,
+  blockquote cite a,
+  blockquote cite a:visited {
+    color: #7e7e7e;
+    border: none;
+  }
+  
+  abbr {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: .05rem;
+    color: #7e7e7e;
+  }
+  .ss-dark .section-heading,
+  .ss-dark .section-desc {
+    color: #ffffff;
+  }
+  
+
+  .section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+    margin: 0 0 5px;
+    position: relative;
+}
+.section-title h1:before{
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    
+    width: 100%;
+    background-color: #febd01;
+    bottom: 0px;
+}
+
+
+
+
+  
+
+/* ===================================================================
+ * # intro 
+ *
+ * ------------------------------------------------------------------- */
+.s-intro {
+    width: 100%;
+    height: 100vh;
+    min-height: 792px;
+  }
+  
+  .intro-content {
+    height: 100%;
+    max-width: 1140px;
+    padding-top: 20vh;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .intro-pic {
+    background-color: #02182c;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url("../img/profile-pic.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+
+    
+  }
+  .intro-pic:hover{
+    background-image:   url("../img/hero-pic-real2.jpg") ;
+    transition: all 2s ease-in-out;
+
+  }
+
+  .strikethrough {
+  position: relative;
+}
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 2px solid #dd0031!important;
+  border-color: inherit;
+
+  -webkit-transform:rotate(-5deg);
+  -moz-transform:rotate(-5deg);
+  -ms-transform:rotate(-5deg);
+  -o-transform:rotate(-5deg);
+  transform:rotate(-5deg);
+}
+
+
+  .intro-pic::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  .intro-grid {
+    background-image: url("../images/pattern-dot-grid.svg");
+    background-size: 24px 24px;
+    opacity: .15;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    bottom: 0;
+    left: 30%;
+  }
+  
+  .intro-text {
+    -webkit-transform: translate3d(0, -3.6rem, 0);
+    transform: translate3d(0, -3.6rem, 0);
+    position: static;
+    z-index: 1;
+  }
+  
+  .intro-text h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.333;
+    color: #cf1767;
+    margin-top: 0;
+  }
+  
+  .intro-text h1 {
+    font-size: 7.8rem;
+    font-weight: 500;
+    line-height: 1.179;
+    color: #ffffff;
+    margin-top: 0;
+  }
+  
+  .intro-scroll {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    position: absolute;
+    bottom: 8rem;
+    left: 24px;
+    z-index: 1;
+  }
+  
+  .intro-scroll a {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.3);
+    position: relative;
+    padding-right: 8.8rem;
+  }
+  
+  .intro-scroll a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 1px;
+    width: 72px;
+    background-color: #cf1767;
+  }
+  
+  /* ------------------------------------------------------------------- 
+   * responsive:
+   * intro
+   * ------------------------------------------------------------------- */
+  @media screen and (max-width:1400px) {
+    .intro-text h3 {
+      font-size: 2.2rem;
+    }
+  
+    .intro-text h1 {
+      font-size: 7.2rem;
+    }
+  
+  }
+  
+  @media screen and (max-width:1200px) {
+    .intro-content {
+      max-width: 1000px;
+    }
+  
+    .intro-text h3 {
+      font-size: 2rem;
+    }
+  
+    .intro-text h1 {
+      font-size: 7rem;
+    }
+  
+  }
+  
+  @media screen and (max-width:1024px) {
+    .s-intro {
+      max-height: 800px;
+    }
+  
+    .intro-text h1 {
+      font-size: 6.2rem;
+    }
+  
+  }
+  
+  @media screen and (max-width:900px) {
+    .intro-text h1 {
+      font-size: 6rem;
+    }
+  
+    .intro-text br {
+      display: none;
+    }
+  
+  }
+  
+  @media screen and (max-width:800px) {
+    .intro-content {
+      width: 88%;
+      padding-top: 8rem;
+    }
+  
+    .intro-pic {
+      top: 12%;
+      left: 40%;
+    }
+  
+    .intro-pic::before {
+      opacity: .4;
+    }
+  
+    .intro-grid {
+      top: 20%;
+      opacity: .1;
+    }
+  
+    .intro-text h3 {
+      font-size: 1.8rem;
+    }
+  
+    .intro-text h1 {
+      font-size: 5.6rem;
+    }
+  
+  }
+  
+  @media screen and (max-width:700px) {
+    .intro-text h1 {
+      font-size: 5rem;
+    }
+  
+    .intro-pic {
+      left: 30%;
+    }
+  
+    .intro-grid {
+      left: 15%;
+    }
+  
+  }
+  
+  @media screen and (max-width:600px) {
+    .s-intro {
+      max-height: none;
+    }
+  
+    .intro-content {
+      width: auto;
+    }
+  
+    .intro-pic {
+      left: 20%;
+    }
+  
+    .intro-grid {
+      left: 10%;
+    }
+  
+    .intro-text {
+      -webkit-transform: translate3d(0, -4.8rem, 0);
+      transform: translate3d(0, -4.8rem, 0);
+    }
+  
+    .intro-text h1 {
+      font-size: 4.8rem;
+    }
+  
+    .intro-scroll {
+      font-size: 1.1rem;
+      left: 30px;
+    }
+  
+  }
+  
+  @media screen and (max-width:400px) {
+    .s-intro {
+      min-height: 656px;
+    }
+  
+    .intro-text h1 {
+      font-size: 4.5rem;
+    }
+  
+  }
+  
+  @media screen and (max-width:350px) {
+    .intro-text h1 {
+      font-size: 4.2rem;
+    }
+  
+  }
+
+  /* section */
+  .section-desc {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 5.4rem;
+    font-weight: 400;
+    line-height: 1.259;
+    letter-spacing: -0.05rem;
+    color: white;
+  }
+  
+@media screen and (max-width:800px) {
+  .heading-block {
+    max-width: 600px;
+  }
+
+  .section-heading {
+    font-size: 1.6rem;
+    padding-top: 0;
+    padding-bottom: 3.2rem;
+    text-align: center;
+  }
+
+  .section-heading::before {
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    margin-left: -75px;
+  }
+
+}
+
+@media screen and (max-width:600px) {
+  .section-heading {
+    margin-bottom: 6.8rem;
+  }
+
+  .section-desc {
+    font-size: 4rem;
+  }
+
+}
+
+@media screen and (max-width:400px) {
+  .section-desc {
+    font-size: 3.4rem;
+  }
+
+  .item-title {
+    font-size: 2.8rem;
+  }
+
+}
+
+
+.heading-block--center {
+  max-width: 940px;
+  text-align: center;
+}
+
+.section-heading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1.7rem;
+  line-height: 1.176;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  margin-top: 0;
+  padding-top: 3.2rem;
+  margin-bottom: 8rem;
+  position: relative;
+}
+
+.section-heading::before {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 2px;
+  background-color: #cf1767;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.section-heading--centerbottom {
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 3.2rem;
+}
+
+.section-heading--centerbottom::before {
+  margin-left: -75px;
+  top: auto;
+  bottom: 0;
+  left: 50%;
+}
+
+.section-desc {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 5.4rem;
+  font-weight: 400;
+  line-height: 1.259;
+  letter-spacing: -0.05rem;
+  color: #ffffff;
+}
+
+
+

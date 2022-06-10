@@ -1,0 +1,19 @@
+.competencies{
+    background-color: white;
+    color: black;
+    padding:  3rem 0;
+}
+.my-skills .title{
+    margin-top: 1rem;
+    
+  }
+  
+  .my-skills .infos{
+    margin-top: 8px;
+  }
+  
+  .my-skills{
+    text-align: center;
+    letter-spacing: 3px;
+  }
+  

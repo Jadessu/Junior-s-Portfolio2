@@ -1,0 +1,74 @@
+.about-me{
+    background-color: rgb(255, 255, 255);
+    padding:  3rem 0;
+  }
+  
+  .about-me .section-title{
+      color: white;
+  }
+.container-about {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+     background-color: rgb(255, 255, 255);
+  }
+  .left {
+    width: 50%;
+    height: 500px;
+    background: url("../img/about-me2.jpg")
+      no-repeat center / cover;
+    border-radius: 8px;
+    
+  }
+
+.more-info{
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 2px;
+    flex-direction: column;
+}
+
+.location{
+    margin-bottom: 1rem;
+}
+
+
+.right {
+  width: 100%;
+  min-height: 400px;
+   background-color: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  /* border-radius: 8px; */
+  margin-left: -120px;
+  color: white;
+}
+.right h1 {
+  font-size: 40px;
+  font-weight: lighter;
+}
+.right p {
+  margin: 20px 0;
+  font-weight: 500;
+  line-height: 25px;
+}
+.right a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+  padding: 20px 30px;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+
+.second{
+  color: black;
+  background-color: var(--light);
+}
